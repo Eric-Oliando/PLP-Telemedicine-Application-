@@ -1,0 +1,802 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+        url(./Images/mid\ healthcare.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 0 72px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .main {
+        padding: 0 20px;
+        height: 40vh;
+        background-size: contain;
+    }
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1; 
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+#logo {
+    width: 110px;
+    clip-path: circle(50%);
+    margin-top: 18px;
+}
+
+.container {
+    flex: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+ul li a {
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+ul li a:hover {
+    color: #3CB371;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #3CB371;
+}
+
+.content {
+    padding: 72px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cont {
+    margin: auto;
+    width: 90%;
+}
+
+.cont h1 {
+    text-align: center;
+    color: #3CB371;
+    font-size: 35px;
+}
+
+h6 {
+    text-align: center;
+    color: #3CB371;
+    font-size: 20px;
+}
+
+.cont p {
+    font-size: inherit;
+    text-align: left;
+    justify-content: center;
+    line-height: 1.45;
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+.cont p mission {
+    color: #3CB371;
+}
+
+/* User Access Section */
+.user-access {
+    background-color: #f9f9f9;
+    padding: 28px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 15;
+}
+
+.user-access h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.user-access p {
+    margin: 10px 0;
+}
+
+user-access .link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+
+.cta-button {
+    background-color: #3CB371;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    flex-direction: row;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Search Functionality Section */
+.search {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 30px;
+}
+
+.search h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.search input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #218838;
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+.faqs {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.benefits {
+    background-color: #3CB371;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: auto 121px;
+    max-width: 1200px;
+    color: white;
+}
+
+.benefits h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f9f9f9;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    list-style: disc;
+    list-style-position: outside;
+    padding: 5px;
+}
+
+.resources {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.resources h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.resource-button {
+    background-color: #333;
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.resource-button:hover {
+    background-color: #3CB371;
+}
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0.4em;
+}
+
+footer h4 {
+    font-family: inherit;
+    font-size: 1.25rem;
+    text-align: center;
+    color: inherit;
+}
+
+footer p {
+    max-width: inherit;
+    margin: auto;
+    color: inherit;
+    max-width: 650px;
+}
+
+footer ul li {
+    padding: 0;
+    max-width: 420px;
+    margin: 15px auto;
+    display: flex;
+    list-style: armenian;
+}
+
+footer ul li a {
+    list-style-type: none;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.social-icons {
+    fill: #ffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 72px;
+    align-items: end;
+}
+
+span {
+    font-size: 16px;
+    margin-right: 120px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Full width for container */
+    .navbar .container {
+        width: 100%;
+    }
+
+    /* Stack menu items vertically */
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content,
+    .cta,
+    .features,
+    .testimonials,
+    .faqs,
+    .benefits,
+    .resources {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .cta-button,
+    .resource-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Reduce padding for very small screens */
+@media (max-width: 480px) {
+
+    .content,
+    .cta,
+    .features,
+    .testimonials,
+    .faqs,
+    .benefits,
+    .resources {
+        padding: 1em;
+    }
+
+    /* Adjust margins for small screens */
+    h1,
+    h2,
+    h3,
+    h4,
+    h6 {
+        margin: 15px 0;
+    }
+}
+
+
+
+/* Form Container */
+.myForm-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Form Heading */
+.myForm-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+.myForm-container label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Input Fields */
+.myForm-container input[type="text"],
+.myForm-container input[type="password"],
+.myForm-container input[type="number"],
+.myForm-container input[type="date"],
+.myForm-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio Buttons */
+.myForm-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+.myForm-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Submit Button */
+.myForm-container button {
+    background-color: #3CB371;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.myForm-container button:hover {
+    background-color: #333;
+}
+
+/* Summary Section */
+#formSummary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9f7ef;
+    border: 1px solid #3CB371;
+    border-radius: 5px;
+}
+
+
+/* Appointment Booking Section Styles */
+
+.appointment-booking {
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-booking h1 {
+    text-align: center;
+    color: #3CB371;
+}
+
+.appointment-booking p {
+    text-align: center;
+    color: #333;
+}
+
+.appointment-booking label {
+    margin-top: 10px;
+    color: #333;
+    display: block;
+}
+
+.appointment-booking input[type="text"],
+.appointment-booking input[type="email"],
+.appointment-booking input[type="tel"],
+.appointment-booking input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.appointment-booking input[type="radio"] {
+    margin-right: 5px;
+}
+
+.appointment-booking .error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.appointment-booking .submit-button {
+    background-color: #3CB371;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.appointment-booking .submit-button:hover {
+    background-color: #333;
+}
+
+@media (max-width: 600px) {
+    .appointment-booking {
+        padding: 15px;
+    }
+
+    .appointment-booking h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* doctors page */
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #3CB371;
+}
+
+.doctors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.doctor-item {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.doctor-item:hover {
+    transform: scale(1.05);
+}
+
+.doctor-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 2px;
+}
+
+.search-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: #3CB371;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-section button {
+    padding: 10px 15px;
+    background-color: #3CB371;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #333;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .doctors-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .search-section input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .doctors-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-section input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .search-section button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .doctor-item {
+        padding: 10px;
+    }
+
+    /* Smaller image size */
+    .doctor-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* Admin page */
+
+.content {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+}
+
+.doctor-management {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #3CB371;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #3CB371;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    height: 1em;
+    /* Keep space for error message */
+}
+
+button {
+    padding: 10px;
+    background-color: #3CB371;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #3CB371;
+}
+
+#doctor-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#doctor-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
